@@ -36,7 +36,7 @@ function openMediumEnvelope(el) {
       const scrollU = Math.floor(window.scrollY / 5);
       if (scrollU > maxUCount) {
         maxUCount = scrollU;
-        const uText = "UUUUUUUUU".repeat(maxUCount);
+        const uText = "UUUUUUUUUUUUUUUUUU".repeat(maxUCount);
         infiniteMessage.textContent = baseText + uText;
       }
     });
