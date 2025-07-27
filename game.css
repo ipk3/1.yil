@@ -1,0 +1,80 @@
+/* Genel arka plan ve font */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #7e3333, #ba6060, #d9a0a0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  /* NAVBAR */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 3px solid rgb(79, 10, 10);
+    border-radius: 0 0 10px 10px;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #d6336c;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+  }
+  
+  .navbar a:hover {
+    color: #8b1e4a;
+  }
+
+  #navbar {
+    transition: top 0.3s;
+  }
+  
+  #navbar.hidden {
+    top: -100px; /* Navbar yukarı kayar */
+  }
+  
+  /* Skor ve buton */
+  #score {
+    color: white;
+    font-size: 18px;
+    margin-top: 80px;
+    display: none;
+  }
+  
+  .start-button {
+    font-size: 20px;
+    padding: 10px 25px;
+    background-color: #810707;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .start-button:hover {
+    background-color: #ffffff;
+    color: #810707;
+  }
+  
+  canvas {
+    background-color: #111;
+    border: 2px solid #fff;
+    display: none;
+    margin-top: 20px;
+  }
+  

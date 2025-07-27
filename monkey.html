@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The chillest of monkeys.</title>
+  <style type="text/css">
+    #bg {
+      position: fixed;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+    }
+    #bg img {
+      position: absolute;
+      top: 0;
+      left: 0;      
+      right: 0;
+      bottom: 0;      
+      margin: auto;      
+      min-width: 50%;      
+      min-height: 50%;                 
+    }
+  </style>
+</head>
+<body bgcolor="#000000">
+
+  <a href="index.html" 
+     style="
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 200;
+
+      color: #6c635e;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+
+      "
+    onmouseover="this.style.color='#cac0ab'"
+    onmouseout="this.style.color='#6c665e'"
+  >
+  🏠 Ana Sayfa
+  </a>
+
+  <div id="tunes" style="z-index:100;position:fixed;left:0;bottom:0;">
+    <iframe width="75%" height="100" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com
+            /tracks/25268368&color=%23ff5500&auto_play=false&hide_related=false&show_comments=
+            true&show_user=true&show_reposts=false&show_teaser=true">
+    </iframe>
+  </div>
+
+  <div id="bg">
+    <img src="monke/monkey.gif" alt="Just chill." class="bg">
+  </div>
+
+</body>
+</html>

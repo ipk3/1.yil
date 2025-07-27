@@ -1,0 +1,91 @@
+html, body {
+    height: 185%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom right, #f0db86, #e6d07965, #f3ecc7);
+    background-attachment: fixed; /* Opsiyonel: Kaydırma sırasında sabit tutar */
+  }
+  
+  
+  /* ===== NAVBAR ===== */
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 3px solid rgb(179, 137, 13);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #d6336c;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+  }
+  
+  .navbar a:hover {
+    color: #8b1e4a;
+  }
+
+  #navbar {
+    transition: top 0.3s;
+  }
+  
+  #navbar.hidden {
+    top: -100px; /* Navbar yukarı kayar */
+  }
+
+  .quiz-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #f9f9ff;
+    border: 2px solid #ccddee;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  }
+  
+  .question {
+    margin-bottom: 20px;
+  }
+  
+  .question p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  label {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3366cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #254a99;
+  }
+  
+  .result-box {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #e7f5ff;
+    border-left: 4px solid #3399ff;
+    display: none;
+  }

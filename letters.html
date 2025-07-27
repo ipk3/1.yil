@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Notlar</title>
+  <link rel="stylesheet" href="letters.css" />
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <a href="game.html">🎮 Oyun</a>
+    <a href="quiz.html">🧠 Test</a>
+    <a href="index.html">🏠 Ana Sayfa</a>
+    <a href="gallery.html">🖼️ Galeri</a>
+  </nav>
+
+
+  <div class="envelope-container" style="position:relative; min-height:1300px; width:100vw; max-width:1200px; margin:auto;">
+    <!-- 10 küçük zarf örneği -->
+    <div class="mini-envelope" onclick="openMiniEnvelope(this)" style="position:absolute; top:50%; left:26%;">
+      <div class="mini-flap"></div>
+      <div class="mini-paper"><span>My everything</span></div>
+      <div class="mini-heart"></div>
+    </div>
+    <div class="mini-envelope" onclick="openMiniEnvelope(this)" style="position:absolute; top:5%; left:26%;">
+      <div class="mini-flap"></div>
+      <div class="mini-paper"><span>Sevgilim</span></div>
+      <div class="mini-heart"></div>
+    </div>
+    <div class="mini-envelope" onclick="openMiniEnvelope(this)" style="position:absolute; top:19%; left:44%;">
+      <div class="mini-flap"></div>
+      <div class="mini-paper"><span>Bir tanem</span></div>
+      <div class="mini-heart"></div>
+    </div>
+    <div class="mini-envelope" onclick="openMiniEnvelope(this)" style="position:absolute; top:7%; left:60%;">
+      <div class="mini-flap"></div>
+      <div class="mini-paper"><span>Canımın içi</span></div>
+      <div class="mini-heart"></div>
+    </div>
+    <div class="mini-envelope" onclick="openMiniEnvelope(this)" style="position:absolute; top:24%; left:17%;">
+      <div class="mini-flap"></div>
+      <div class="mini-paper"><span>My beloved</span></div>
+      <div class="mini-heart"></div>
+    </div>
+    <div class="mini-envelope" onclick="openMiniEnvelope(this)" style="position:absolute; top:35%; left:36%;">
+      <div class="mini-flap"></div>
+      <div class="mini-paper"><span>My cuite pie</span></div>
+      <div class="mini-heart"></div>
+    </div>
+    <div class="mini-envelope" onclick="openMiniEnvelope(this)" style="position:absolute; top:30%; left:59%;">
+      <div class="mini-flap"></div>
+      <div class="mini-paper"><span>My sugar plum</span></div>
+      <div class="mini-heart"></div>
+    </div>
+    <div class="mini-envelope" onclick="openMiniEnvelope(this)" style="position:absolute; top:17%; left:76%;">
+      <div class="mini-flap"></div>
+      <div class="mini-paper"><span>Aşkım</span></div>
+      <div class="mini-heart"></div>
+    </div>
+    <div class="mini-envelope" onclick="openMiniEnvelope(this)" style="position:absolute; top:43%; left:75%;">
+      <div class="mini-flap"></div>
+      <div class="mini-paper"><span>My love</span></div>
+      <div class="mini-heart"></div>
+    </div>
+    <div class="mini-envelope" onclick="openMiniEnvelope(this)" style="position:absolute; top:59%; left:55%;">
+      <div class="mini-flap"></div>
+      <div class="mini-paper"><span>My sweet baby...</span></div>
+      <div class="mini-heart"></div>
+    </div>
+  </div>
+  
+    <!--büyük zarflar-->
+    <div class="big-envelope" onclick="openBigEnvelope(this)" style="position:absolute; top:900px; left:20%;">
+        <div class="big-flap"></div>
+        <div class="big-paper" onclick="event.stopPropagation(); expandPaper(this)">
+          <button class="close-btn" onclick="event.stopPropagation(); closePaper(this)">×</button>
+          <span>Gülümsemeni, bakışını, saçlarını, düşünürken dudağını yemeni, göz devirmeni, bana temas etmeni, 
+            birlikte zaman geçirmemizi, şaklabanlık yapmanı, kafayı yemeni, otistik olmanı, düşünceli olmanı, ucube olmanı... 
+            seni her şeyinle olduğun gibi, seni sen olduğun için seviyorum.</span>
+        </div>
+        <div class="big-heart"></div>
+      </div>
+    <div class="big-envelope" onclick="openBigEnvelope(this)" style="position:absolute; top:1050px; left:45%;">
+      <div class="big-flap"></div>
+      <div class="big-paper" onclick="event.stopPropagation(); expandPaper(this)">
+        <button class="close-btn" onclick="event.stopPropagation(); closePaper(this)">×</button>
+        <span>Kendini ne kadar iyi veya kötü gördüğün umrumda değil, daha iyi birisinin karşıma çıkıp çıkmayacak olması da umrumda değil. 
+            Gerekirse birlikte daha iyi oluruz. Hiçbir şey seni sevmemi engelleyemez, ben bile.</span>
+      </div>
+      <div class="big-heart"></div>
+    </div>
+    <div class="big-envelope" onclick="openBigEnvelope(this)" style="position:absolute; top:900px; left:70%;">
+      <div class="big-flap"></div>
+      <div class="big-paper" onclick="event.stopPropagation(); expandPaper(this)">
+        <button class="close-btn" onclick="event.stopPropagation(); closePaper(this)">×</button>
+        <span>Seninle son günümüzde son sarılmamızı yaptığımızda hayalimdeki sarılmayı gerçekleştirmiştik... 
+            Öyle sarılmayı o kadar istiyordum ki... O an çok huzurlu, mutlu, içim sıcacık olmuştu. 
+            Sana tekrar sarılıp saatlerce öyle kalmayı istiyorum 🥹</span>
+      </div>
+      <div class="big-heart"></div>
+    </div>
+  
+    <!--orta boy zarflar-->
+    <div class="medium-envelope" onclick="openMediumEnvelope(this)" style="position:absolute; top:1300px; left:35%;">
+      <div class="medium-flap"></div>
+      <div class="medium-paper"><span>Seni seviyorum</span></div>
+      <div class="medium-heart"></div>
+    </div>
+    <div class="medium-envelope" onclick="openMediumEnvelope(this)" style="position:absolute; top:1300px; left:60%;">
+      <div class="medium-flap"></div>
+      <div class="medium-paper"><span>İyi ki varsın</span></div>
+      <div class="medium-heart"></div>
+    </div>
+  </div>
+  
+
+
+  <!-- Sonsuz mesaj alanı -->
+  <div class="infinite-section">
+    <div class="legend" style="color: navy;">Some legends say that you can never reach the bottom...</div>
+    <div id="infiniteMessage" class="infinite-message" style="color: azure;">IIIIII LOOOVEEE YOOOUUUUUUUUUUUUUUUUUU</div>
+  </div>
+
+  <!-- Scroll için boş alan -->
+  <div class="scroll-space"></div>
+
+  <!-- Yukarı çık butonu -->
+  <button id="scrollTopBtn" title="Yukarı Çık">⬆</button>
+
+  <script src="letters.js"></script>
+</body>
+</html>

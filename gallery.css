@@ -1,0 +1,121 @@
+html, body {
+    height: 110%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom right, #5fae85b4, #9ae6c6b8, #65a49b2a);
+    background-attachment: fixed;
+  }
+  
+  /* NAVBAR */
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 3px solid rgb(9, 75, 44);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #d6336c;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+  }
+  
+  .navbar a:hover {
+    color: #8b1e4a;
+  }
+
+  #navbar {
+    transition: top 0.3s;
+  }
+  
+  #navbar.hidden {
+    top: -100px; /* Navbar yukarı kayar */
+  }
+  
+  /* TABS */
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 15px;
+  }
+  
+  .tabs button {
+    padding: 10px 25px;
+    font-size: 18px;
+    background-color: #fff0f5;
+    color: #b03060;
+    border: 2px solid #d6336c;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .tabs button:hover {
+    background-color: #ffd6e8;
+    transform: scale(1.05);
+  }
+  
+  /* GALLERY */
+  .gallery-section {
+    display: none;
+    margin: 20px auto 0 auto;
+    width: 90%;
+    max-width: 1000px;
+    padding-bottom: 10px;
+  }
+  
+  .scroll-gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 30px;
+    padding: 10px 5px;
+    scroll-behavior: smooth;
+  }
+  
+  .photo-card {
+    min-width: 130px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .photo-card img, .photo-card video {
+    width: 130px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    margin: 0;
+  }
+  
+  .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 0 20px #262626;
+    border-radius: 10px;
+  }
