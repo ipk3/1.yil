@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #dda7e0, #f7e9d7, #c3d3f5);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 3px solid rgb(199, 66, 197);
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #d6336c;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.navbar a:hover {
+  color: #8b1e4a;
+}
+
+#navbar {
+  transition: top 0.3s;
+}
+
+#navbar.hidden {
+  top: -100px; /* Navbar yukarı kayar */
+}
+
+.container {
+  text-align: center;
+  padding: 4rem 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #d6336c;
+}
+
+p {
+  font-size: 1.3rem;
+  color: #444;
+  margin-top: 1rem;
+}
+
+/* Kalp animasyonu */
+#heart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  background-image: url('https://img.icons8.com/color/96/like--v1.png');
+  background-size: cover;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.5);
+  pointer-events: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+  #particles {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    overflow: visible;
+    z-index: 9998;
+  }
+  
+  .heart-particle {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url('https://img.icons8.com/color/96/like--v1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    pointer-events: none;
+    will-change: transform, opacity;
+  }
